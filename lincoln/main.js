@@ -22,12 +22,13 @@ var realTimeCamera = {
 			  	$("#log").append('Using video device: ' + videoTracks[0].label);
 
 			  	window.stream = stream;
-			  	if (window.URL) {
-			  		video.src = window.URL.createObjectURL(stream);
-			  	}
-				else {
-					video.src = stream;
-				}
+			  	video.srcObject = stream;
+			 //  	if (window.URL) {
+			 //  		video.src = window.URL.createObjectURL(stream);
+			 //  	}
+				// else {
+				// 	video.src = stream;
+				// }
 				
 			}, function(error) {				//error
 				if (error.name === 'ConstraintNotSatisfiedError') {
