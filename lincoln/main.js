@@ -21,7 +21,14 @@ var realTimeCamera = {
 			  	var videoTracks = stream.getVideoTracks();
 			  	$("#log").append('Using video device: ' + videoTracks[0].label);
 
-				video.src = window.URL.createObjectURL(stream);
+			  	window.stream = stream;
+			  	if (window.URL) {
+			  		video.src = window.URL.createObjectURL(stream);
+			  	}
+				else {
+					video.src = stream;
+				}
+				
 			}, function(error) {				//error
 				if (error.name === 'ConstraintNotSatisfiedError') {
     				$("#log").append('The resolution ' + constraints.video.width.exact + 'x' + constraints.video.width.exact + ' px is not supported by your device.');
