@@ -1,0 +1,21 @@
+.video-wrapper {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+video {
+	width: 100%;
+}
+
+.floating-rectangle {
+	height: 15%;
+	width: 25%;
+	border: 3px blue solid;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+}
+
+
+
