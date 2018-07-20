@@ -15,7 +15,7 @@
 		"announcement": 20,
 		"theatrePoster": 20
 	},
-	"isDev": true,
+	"isDev": false,
 	"startingSlideIndex": 0,
 	"overrideDate": "2018-07-19T15:00",
 	"speedUpTime": 200
