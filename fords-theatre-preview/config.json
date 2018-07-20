@@ -1,0 +1,22 @@
+{
+	
+	"screenID": "113",
+	"autoPlay": true,
+	"checkScheduleIntervalInMinutes": 5,
+	"startQueueInMinutesBeforeEvent": 10,
+	"stopQueueInMinutesBeforeEvent": 5,
+	"assetDomain": "http://live-fordstheatre.pantheonsite.io/sites/default/files",
+	"imageDefault": "./default.jpg",
+	"mapDefault": "./map.jpg",
+	"defaultSlideTime": {
+		"schedule": 40,
+		"liteInterpretive": 20,
+		"staticImage": 20,
+		"announcement": 20,
+		"theatrePoster": 20
+	},
+	"isDev": true,
+	"startingSlideIndex": 0,
+	"overrideDate": "2018-07-19T15:00",
+	"speedUpTime": 200
+}
