@@ -4,14 +4,12 @@ header("Access-Control-Allow-Origin:*");
 header('Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
 header('Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT');
 
-//$domainPath = "";
-//$url = $_GET['url'];
-$domainPath = "https://www.fords.org/ajax/feeds/schedule/?key=aCmBM8R6ZFBseaJGrec2dsjA4YdZkuQA";
-
+// $url = $_GET['url'];
+// if(isset($url)) $domainPath = $url;
 $username = '';
 $password = '';
 
-
+$domainPath = "https://www.fords.org/ajax/feeds/schedule/?key=aCmBM8R6ZFBseaJGrec2dsjA4YdZkuQA";
 
 $context = stream_context_create(array(
     'http' => array(
@@ -21,5 +19,3 @@ $context = stream_context_create(array(
 
 $string = file_get_contents($domainPath, false, $context);
 print_r($string);
-
-?>
