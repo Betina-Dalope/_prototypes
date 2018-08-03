@@ -1,6 +1,6 @@
 {
 	"screenID": "34",
-	"previewMode": false,
+	"previewMode": true,
 	"autoPlay": true,
 	"checkScheduleIntervalInMinutes": 5,
 	"startQueueInMinutesBeforeEvent": 10,
